@@ -7,7 +7,7 @@
 // NOTE FOR DEPLOYMENT: Set your Google Civic API key here
 // Get a free key at: https://console.developers.google.com
 // Enable "Google Civic Information API"
-const GOOGLE_CIVIC_API_KEY = 'YOUR_GOOGLE_CIVIC_API_KEY';
+const GOOGLE_CIVIC_API_KEY = 'AIzaSyDMXHfprA0Anbr-PjegakeELmLRIIyaBNY';
 
 // Opposition candidate links — to be filled in as challengers emerge
 // Format: "LastName-Chamber": { name: "Full Name", url: "https://..." }
