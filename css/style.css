@@ -935,6 +935,19 @@ footer {
 .footer-bottom {
   max-width: 1200px;
   margin: 0 auto;
+  text-align: center;
+}
+
+.footer-badge {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 0.75rem;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.footer-badge:hover {
+  opacity: 1;
 }
 
 .footer-bottom p {
