@@ -330,6 +330,146 @@ h2 {
   font-weight: 500;
 }
 
+/* ---- LAWSUIT SECTION ---- */
+.lawsuit-section {
+  padding: 6rem 2rem;
+  border-top: 1px solid var(--border);
+  background: var(--black-mid);
+}
+
+.lawsuit-sub {
+  font-size: 0.95rem;
+  color: rgba(244, 240, 232, 0.7);
+  margin-bottom: 2rem;
+  max-width: 640px;
+  line-height: 1.7;
+}
+
+.lawsuit-sub em {
+  color: var(--white);
+  font-style: italic;
+}
+
+.lawsuit-args {
+  margin-bottom: 2.5rem;
+  max-width: 640px;
+}
+
+.lawsuit-args h3 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.lawsuit-args ul {
+  list-style: none;
+  padding: 0;
+}
+
+.lawsuit-args li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  color: rgba(244, 240, 232, 0.65);
+  line-height: 1.6;
+}
+
+.lawsuit-args li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--yellow);
+}
+
+.lawsuit-args li strong {
+  color: var(--yellow);
+  font-weight: 500;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 2.5rem;
+  max-width: 640px;
+  border-left: 2px solid var(--border);
+}
+
+.timeline-event {
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+
+.timeline-event:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-event::before {
+  content: "";
+  position: absolute;
+  left: -2rem;
+  top: 0.35rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--gray);
+  border: 2px solid var(--black-mid);
+  transform: translateX(calc(-50% + 1px));
+}
+
+.timeline-event--upcoming::before {
+  background: var(--yellow);
+  box-shadow: 0 0 8px rgba(245, 193, 0, 0.4);
+}
+
+.timeline-date {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gray);
+  margin-bottom: 0.25rem;
+}
+
+.timeline-event--upcoming .timeline-date {
+  color: var(--yellow);
+}
+
+.timeline-desc {
+  font-size: 0.9rem;
+  color: rgba(244, 240, 232, 0.7);
+  line-height: 1.5;
+}
+
+.timeline-desc em {
+  color: var(--white);
+}
+
+.cta-btn--secondary {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--blue-cta);
+  border: 2px solid var(--blue-cta);
+  background: transparent;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.cta-btn--secondary:hover {
+  background: var(--blue-cta);
+  color: var(--black);
+}
+
 /* ---- ZIP LOOKUP ---- */
 .lookup-section {
   padding: 6rem 2rem;
@@ -661,7 +801,7 @@ h2 {
 
 .action-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1px;
   background: var(--border);
   border: 1px solid var(--border);
@@ -836,7 +976,7 @@ footer {
 @media (max-width: 480px) {
   h1 { font-size: 56px; }
   .hero { padding: 6rem 1.25rem 3rem; }
-  .what-happened, .lookup-section, .take-action { padding: 4rem 1.25rem; }
+  .what-happened, .lawsuit-section, .lookup-section, .take-action { padding: 4rem 1.25rem; }
   .fact-card { padding: 1.5rem; }
   .rep-card-header { padding: 1.25rem; }
   .rep-actions { padding: 1.25rem; }
